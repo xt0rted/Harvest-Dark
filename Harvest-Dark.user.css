@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Harvest Dark
 @namespace      github.com/xt0rted/Harvest-Dark
-@version        1.0.6
+@version        1.0.7
 @homepageURL    https://github.com/xt0rted/Harvest-Dark
 @updateURL      https://raw.githubusercontent.com/xt0rted/Harvest-Dark/master/Harvest-Dark.user.css
 @license        CC-BY-SA-4.0
@@ -73,7 +73,7 @@
     background: #182030 !important;
   }
 
-  .dropdown a:hover, .dropdown button:hover,
+  .dropdown a:hover, .dropdown button:hover
   {
     background: #538fca !important;
   }
