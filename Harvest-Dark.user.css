@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Harvest Dark
 @namespace      github.com/xt0rted/Harvest-Dark
-@version        1.0.1
+@version        1.0.2
 @homepageURL    https://github.com/xt0rted/Harvest-Dark
 @updateURL      https://raw.githubusercontent.com/xt0rted/Harvest-Dark/master/Harvest-Dark.user.css
 @license        CC-BY-SA-4.0
@@ -90,20 +90,6 @@
     background-color: transparent !important;
   }
 
-  body,
-  .action-bar,
-  .hui-tab.hui-tab-selected,
-  .user-information,
-  .dropdown a,
-  .hui-dialog-title,
-  .hui-label,
-  .day-view-entry td,
-  .day-view-total,
-  .day-view-total > span, .expenses-form .receipt-input .file-input
-  {
-    color: #bababa !important;
-  }
-
   .hui-tab,
   .spent-at-display,
   .day-view-entry.is-running .task
@@ -119,6 +105,25 @@
   .hui-tab-count
   {
     color: #afafaf !important;
+  }
+
+  body,
+  .action-bar,
+  .hui-tab.hui-tab-selected,
+  .user-information,
+  .dropdown a,
+  .hui-dialog-title,
+  .hui-label,
+  .day-view-entry td,
+  .day-view-total,
+  .day-view-total > span, .expenses-form .receipt-input .file-input
+  {
+    color: #bababa !important;
+  }
+
+  .hui-button-primary, .hui-button-primary[disabled]
+  {
+    color: #dcdcdc !important;
   }
 
   .dropdown a:hover
@@ -210,7 +215,6 @@
   {
     background: linear-gradient(#407045, #305530) !important;
     border-color: #083 !important;
-    color: #dcdcdc !important;
   }
 
   .hui-button-primary:hover
@@ -222,7 +226,6 @@
   .hui-button-primary[disabled] {
     background: linear-gradient(#203522, #152715) !important;
     border-color: #041 !important;
-    color: #dcdcdc !important;
   }
 
   .hui-dialog-progress-meter > li:before,
