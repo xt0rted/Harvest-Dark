@@ -270,7 +270,7 @@
     color: #ddd !important;
   }
 
-  .harvest-tooltip:before
+  .harvest-tooltip-top:before
   {
     border-top-color: #542 !important;
   }
@@ -278,6 +278,16 @@
   .harvest-tooltip-top:after
   {
     border-top-color: #29211c !important;
+  }
+
+  .harvest-tooltip-bottom:before
+  {
+    border-bottom-color: #542 !important;
+  }
+
+  .harvest-tooltip-bottom:after
+  {
+    border-bottom-color: #29211c !important;
   }
 
   .popover-helper.is-right:before
