@@ -258,11 +258,21 @@
     color: inherit !important;
   }
 
-  .popover-helper
+  .harvest-tooltip, .popover-helper
   {
     background: #29211c !important;
     border-color: #542 !important;
     color: #ddd !important;
+  }
+
+  .harvest-tooltip:before
+  {
+    border-top-color: #542 !important;
+  }
+
+  .harvest-tooltip-top:after
+  {
+    border-top-color: #29211c !important;
   }
 
   .popover-helper.is-right:before
