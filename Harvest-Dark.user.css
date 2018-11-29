@@ -319,6 +319,11 @@
     padding-left: 12px !important;
   }
 
+  .button-new[disabled]:before
+  {
+    opacity: 1;
+  }
+
   i[data-icon="x"] {
     background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMCIgaGVpZ2h0PSIxMCIgdmlld0JveD0iMCAwIDEyIDEyIiBmaWxsPSIjZmZmZmZmIj4gIDxwb2x5Z29uIHBvaW50cz0iMTIsOS45IDguMSw2IDEyLDIuMSA5LjksMCA2LDMuOSAyLjEsMCAwLDIuMSAzLjksNiAwLDkuOSAyLjEsMTIgNiw4LjEgOS45LDEyIi8+PC9zdmc+) !important;
   }
