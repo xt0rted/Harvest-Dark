@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Harvest Dark
 @namespace      github.com/xt0rted/Harvest-Dark
-@version        1.0.0
+@version        1.0.1
 @homepageURL    https://github.com/xt0rted/Harvest-Dark
 @updateURL      https://raw.githubusercontent.com/xt0rted/Harvest-Dark/master/Harvest-Dark.user.css
 @license        CC-BY-SA-4.0
@@ -143,14 +143,13 @@
   .dropdown,
   .user-information,
   .hui-empty,
-  .hui-tabs,
-  .hui-tab.hui-tab-selected,
+  .hui-tabs, .hui-tab.hui-tab-selected,
   .hui-form-field,
   .timesheet-app-banner-link,
   .time-tracking-reminder-setup-prompt,
-  .hui-dialog,
-  .hui-dialog-title,
-  .day-view-entry
+  .hui-dialog, .hui-dialog-title,
+  .day-view-entry,
+  .table th, .table td, .border-top
   {
     border-color: #484848 !important;
   }
