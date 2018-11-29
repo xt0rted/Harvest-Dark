@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Harvest Dark
 @namespace      github.com/xt0rted/Harvest-Dark
-@version        1.0.4
+@version        1.0.5
 @homepageURL    https://github.com/xt0rted/Harvest-Dark
 @updateURL      https://raw.githubusercontent.com/xt0rted/Harvest-Dark/master/Harvest-Dark.user.css
 @license        CC-BY-SA-4.0
@@ -43,6 +43,11 @@
     background: #202020 !important;
   }
 
+  .expense.is-locked > td
+  {
+    background: #242424 !important;
+  }
+
   .hui-button.hui-button-selected
   {
     background: #343434 !important;
@@ -71,11 +76,6 @@
   .dropdown a:hover
   {
     background: #538fca !important;
-  }
-
-  .expense.is-locked > td
-  {
-    background: rgba(255,255,255,.1) !important
   }
 
   .text-label-primary
