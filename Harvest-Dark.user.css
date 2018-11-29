@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Harvest Dark
 @namespace      github.com/xt0rted/Harvest-Dark
-@version        1.0.3
+@version        1.0.4
 @homepageURL    https://github.com/xt0rted/Harvest-Dark
 @updateURL      https://raw.githubusercontent.com/xt0rted/Harvest-Dark/master/Harvest-Dark.user.css
 @license        CC-BY-SA-4.0
@@ -126,7 +126,8 @@
     color: #c0c0c0 !important;
   }
 
-  .hui-button-primary, .hui-button-primary[disabled]
+  .hui-button-primary, .hui-button-primary[disabled],
+  .expenses-table .category
   {
     color: #dcdcdc !important;
   }
