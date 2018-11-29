@@ -26,7 +26,8 @@
   .hui-empty,
   .timesheet-app-banner-link,
   .time-tracking-reminder-setup-prompt,
-  .hui-dialog, .day-view-entry
+  .hui-dialog, .day-view-entry, .expenses-week-container,
+  .expenses-form
   {
     background: #181818 !important;
   }
@@ -37,7 +38,7 @@
   }
 
   .user-information,
-  .hui-dialog-title
+  .hui-dialog-title, .receipt-input .file-input, .expenses-form .currency-code
   {
     background: #202020 !important;
   }
@@ -74,7 +75,7 @@
 
   .expense.is-locked > td
   {
-    background: rgba(255,255,255,.15) !important
+    background: rgba(255,255,255,.1) !important
   }
 
   .text-label-primary
@@ -98,7 +99,7 @@
   .hui-label,
   .day-view-entry td,
   .day-view-total,
-  .day-view-total > span
+  .day-view-total > span, .expenses-form .receipt-input .file-input
   {
     color: #bababa !important;
   }
@@ -149,7 +150,8 @@
   .time-tracking-reminder-setup-prompt,
   .hui-dialog, .hui-dialog-title,
   .day-view-entry,
-  .table th, .table td, .border-top
+  .table th, .table td, .border-top,
+  .expenses-form, .expenses-form .currency-code, .expenses-form .receipt-input .file-input
   {
     border-color: #484848 !important;
   }
@@ -217,6 +219,12 @@
     border-color: #083 !important;
   }
 
+  .hui-button-primary[disabled] {
+    background: linear-gradient(#203522, #152715) !important;
+    border-color: #041 !important;
+    color: #dcdcdc !important;
+  }
+
   .hui-dialog-progress-meter > li:before,
   .hui-dialog-progress-meter > li
   {
@@ -275,6 +283,11 @@
   .chosen-container-multi .chosen-choices li.search-field input[type="text"]
   {
     color: #ccc !important;
+  }
+
+  .expenses-week-dates
+  {
+    padding-left: 12px !important;
   }
 
   i[data-icon="x"] {
