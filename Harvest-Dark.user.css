@@ -121,6 +121,11 @@
     color: #bababa !important;
   }
 
+  .hui-button
+  {
+    color: #c0c0c0 !important;
+  }
+
   .hui-button-primary, .hui-button-primary[disabled]
   {
     color: #dcdcdc !important;
@@ -200,7 +205,6 @@
   .hui-button
   {
     background: linear-gradient(#202020, #181818) !important;
-    color: #c0c0c0 !important;
     border: 1px solid #383838 !important;
     box-shadow: none !important;
   }
