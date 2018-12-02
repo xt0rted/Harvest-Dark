@@ -190,12 +190,14 @@
   }
 
   .popover.is-down-right:before,
+  .dropdown.is-down-left:before,
   .dropdown.is-down-right:before
   {
     border-bottom-color: #484848 !important;
   }
 
   .popover.is-down-right:after,
+  .dropdown.is-down-left:after,
   .dropdown.is-down-right:after
   {
     border-bottom-color: #181818 !important;
