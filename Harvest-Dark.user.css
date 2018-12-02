@@ -272,6 +272,7 @@
     color: inherit !important;
   }
 
+  .team-capacity-box,
   .harvest-tooltip, .popover-helper
   {
     background: #29211c !important;
