@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Harvest Dark
 @namespace      github.com/xt0rted/Harvest-Dark
-@version        1.0.9
+@version        1.0.10
 @homepageURL    https://github.com/xt0rted/Harvest-Dark
 @updateURL      https://raw.githubusercontent.com/xt0rted/Harvest-Dark/master/Harvest-Dark.user.css
 @license        CC-BY-SA-4.0
@@ -28,12 +28,13 @@
   .time-tracking-reminder-setup-prompt,
   .hui-dialog, .day-view-entry, .expenses-week-container,
   .expenses-form, .payment-module, #detailed-form, .hui-well,
-  .invoices-data-box .invoices-graph, .invoices-data-box .invoices-big-data
+  .invoices-data-box .invoices-graph, .invoices-data-box .invoices-big-data,
+  .company-plan, .summaryform
   {
     background: #181818 !important;
   }
 
-  .hui-tab.hui-tab-selected
+  .hui-tab.hui-tab-selected, .hui-dialog-close
   {
     background: #222 !important;
   }
@@ -124,7 +125,8 @@
   .hui-label,
   .day-view-entry td,
   .day-view-total,
-  .day-view-total > span, .expenses-form .receipt-input .file-input
+  .day-view-total > span, .expenses-form .receipt-input .file-input,
+  .summaryform table.pricing_summary tr.total td
   {
     color: #bababa !important;
   }
@@ -172,7 +174,9 @@
   .table th, .table td, .border-top,
   .expenses-form, .expenses-form .currency-code, .expenses-form .receipt-input .file-input,
   .payment-module, #detailed-form, .hui-well, .invoices-data-box .invoices-graph,
-  .invoices-data-box .invoices-big-data, .invoices-data-box .invoices-big-data .amount-open
+  .invoices-data-box .invoices-big-data, .invoices-data-box .invoices-big-data .amount-open,
+  .company-plan, .hui-dialog-close, table.checkout_form tr.border td, .summaryform,
+  .summaryform table.pricing_summary td
   {
     border-color: #484848 !important;
   }
@@ -319,6 +323,7 @@
     border-right-color: #29211c !important;
   }
 
+  input:not([type="submit"]),
   .hui-input,
   .hui-input[disabled],
   .chosen-container-multi .chosen-choices
