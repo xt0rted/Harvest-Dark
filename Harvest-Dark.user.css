@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Harvest Dark
 @namespace      github.com/xt0rted/Harvest-Dark
-@version        1.0.11
+@version        1.0.12
 @homepageURL    https://github.com/xt0rted/Harvest-Dark
 @updateURL      https://raw.githubusercontent.com/xt0rted/Harvest-Dark/master/Harvest-Dark.user.css
 @license        CC-BY-SA-4.0
@@ -75,6 +75,16 @@
     background: #182030 !important;
   }
 
+  .invoices-data-box .invoices-graph .invoices-graph-legend .key-paid
+  {
+    background: rgba(79, 140, 201, 0.75) !important;
+  }
+
+  .invoices-data-box .invoices-graph .invoices-graph-legend .key-open
+  {
+    background: rgba(79, 140, 201, 0.4) !important;
+  }
+
   .dropdown a:hover, .dropdown button:hover
   {
     background: #538fca !important;
@@ -97,6 +107,26 @@
   .hui-sidebar
   {
     background-color: transparent !important;
+  }
+
+  .invoices-data-box .invoices-graph .background .hover-background rect.is-selected
+  {
+    fill: #343434 !important;
+  }
+
+  .invoices-data-box .invoices-graph .chart rect.paid
+  {
+    fill: rgba(79, 140, 201, 0.75) !important;
+  }
+
+  .invoices-data-box .invoices-graph .chart rect.open
+  {
+    fill: rgba(79, 140, 201, 0.4) !important;
+  }
+
+  .invoices-data-box .invoices-graph .background .y-axis-grid line
+  {
+    stroke: #484848 !important;
   }
 
   .hui-tab,
