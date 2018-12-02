@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Harvest Dark
 @namespace      github.com/xt0rted/Harvest-Dark
-@version        1.0.7
+@version        1.0.8
 @homepageURL    https://github.com/xt0rted/Harvest-Dark
 @updateURL      https://raw.githubusercontent.com/xt0rted/Harvest-Dark/master/Harvest-Dark.user.css
 @license        CC-BY-SA-4.0
@@ -27,7 +27,7 @@
   .timesheet-app-banner-link,
   .time-tracking-reminder-setup-prompt,
   .hui-dialog, .day-view-entry, .expenses-week-container,
-  .expenses-form
+  .expenses-form, .payment-module, #detailed-form, .hui-well
   {
     background: #181818 !important;
   }
@@ -169,7 +169,8 @@
   .hui-dialog, .hui-dialog-title,
   .day-view-entry,
   .table th, .table td, .border-top,
-  .expenses-form, .expenses-form .currency-code, .expenses-form .receipt-input .file-input
+  .expenses-form, .expenses-form .currency-code, .expenses-form .receipt-input .file-input,
+  .payment-module, #detailed-form, .hui-well
   {
     border-color: #484848 !important;
   }
@@ -177,6 +178,11 @@
   .text-label-primary
   {
     border-color: rgba(225, 225, 225, .2) !important
+  }
+
+  #detailed-form
+  {
+    box-shadow: none !important;
   }
 
   .action-bar
