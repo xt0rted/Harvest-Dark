@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Harvest Dark
 @namespace      github.com/xt0rted/Harvest-Dark
-@version        1.0.12
+@version        1.0.13
 @homepageURL    https://github.com/xt0rted/Harvest-Dark
 @updateURL      https://raw.githubusercontent.com/xt0rted/Harvest-Dark/master/Harvest-Dark.user.css
 @license        CC-BY-SA-4.0
@@ -75,12 +75,14 @@
     background: #182030 !important;
   }
 
-  .invoices-data-box .invoices-graph .invoices-graph-legend .key-paid
+  .invoices-data-box .invoices-graph .invoices-graph-legend .key-paid,
+  .reports-summary .billable-percent .billable-percent-info ul span.billable-percent-key
   {
     background: rgba(79, 140, 201, 0.75) !important;
   }
 
-  .invoices-data-box .invoices-graph .invoices-graph-legend .key-open
+  .invoices-data-box .invoices-graph .invoices-graph-legend .key-open,
+  .reports-summary .billable-percent .billable-percent-info ul span.billable-percent-key.key-unbillable
   {
     background: rgba(79, 140, 201, 0.4) !important;
   }
@@ -122,6 +124,17 @@
   .invoices-data-box .invoices-graph .chart rect.open
   {
     fill: rgba(79, 140, 201, 0.4) !important;
+  }
+
+  .billable-percent-circle svg circle,
+  .billable-percent-circle svg path[stroke="#41b419"]
+  {
+    stroke: rgba(79, 140, 201, 0.75) !important;
+  }
+
+  .billable-percent-circle svg path[stroke="#B5E5A5"]
+  {
+    stroke: rgba(79, 140, 201, 0.4) !important;
   }
 
   .invoices-data-box .invoices-graph .background .y-axis-grid line
