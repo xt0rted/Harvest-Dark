@@ -114,7 +114,7 @@
     color: #afafaf !important;
   }
 
-  body,
+  body, h1, h2, h3, h4, h5, h6,
   .action-bar,
   .hui-tab.hui-tab-selected,
   .user-information,
