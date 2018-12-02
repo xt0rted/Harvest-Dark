@@ -29,7 +29,7 @@
   .hui-dialog, .day-view-entry, .expenses-week-container,
   .expenses-form, .payment-module, #detailed-form, .hui-well,
   .invoices-data-box .invoices-graph, .invoices-data-box .invoices-big-data,
-  .company-plan, .summaryform
+  .company-plan, .summaryform, .entry-delete-confirmation
   {
     background: #181818 !important;
   }
@@ -156,7 +156,7 @@
   .day-view-entry td,
   .day-view-total,
   .day-view-total > span, .expenses-form .receipt-input .file-input,
-  .summaryform table.pricing_summary tr.total td
+  .summaryform table.pricing_summary tr.total td, .entry-delete-confirmation
   {
     color: #bababa !important;
   }
@@ -206,7 +206,7 @@
   .payment-module, #detailed-form, .hui-well, .invoices-data-box .invoices-graph,
   .invoices-data-box .invoices-big-data, .invoices-data-box .invoices-big-data .amount-open,
   .company-plan, .hui-dialog-close, table.checkout_form tr.border td, .summaryform,
-  .summaryform table.pricing_summary td
+  .summaryform table.pricing_summary td, .entry-delete-confirmation
   {
     border-color: #484848 !important;
   }
