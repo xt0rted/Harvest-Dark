@@ -82,6 +82,13 @@
   {
     background-color: initial !important;
   }
+
+  .white-background,
+  .docs-controller.index-action main
+  {
+    background: transparent !important;
+  }
+
   .action-bar,
   #global-footer,
   .button-new-time-entry,
