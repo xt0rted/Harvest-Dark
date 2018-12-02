@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Harvest Dark
 @namespace      github.com/xt0rted/Harvest-Dark
-@version        1.0.8
+@version        1.0.9
 @homepageURL    https://github.com/xt0rted/Harvest-Dark
 @updateURL      https://raw.githubusercontent.com/xt0rted/Harvest-Dark/master/Harvest-Dark.user.css
 @license        CC-BY-SA-4.0
@@ -27,7 +27,8 @@
   .timesheet-app-banner-link,
   .time-tracking-reminder-setup-prompt,
   .hui-dialog, .day-view-entry, .expenses-week-container,
-  .expenses-form, .payment-module, #detailed-form, .hui-well
+  .expenses-form, .payment-module, #detailed-form, .hui-well,
+  .invoices-data-box .invoices-graph, .invoices-data-box .invoices-big-data
   {
     background: #181818 !important;
   }
@@ -170,7 +171,8 @@
   .day-view-entry,
   .table th, .table td, .border-top,
   .expenses-form, .expenses-form .currency-code, .expenses-form .receipt-input .file-input,
-  .payment-module, #detailed-form, .hui-well
+  .payment-module, #detailed-form, .hui-well, .invoices-data-box .invoices-graph,
+  .invoices-data-box .invoices-big-data, .invoices-data-box .invoices-big-data .amount-open
   {
     border-color: #484848 !important;
   }
@@ -180,7 +182,8 @@
     border-color: rgba(225, 225, 225, .2) !important
   }
 
-  #detailed-form
+  #detailed-form,
+  .invoices-data-box .invoices-graph .axes .x-axis text
   {
     box-shadow: none !important;
   }
