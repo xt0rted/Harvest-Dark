@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Harvest Dark
 @namespace      github.com/xt0rted/Harvest-Dark
-@version        1.0.14
+@version        1.0.15
 @homepageURL    https://github.com/xt0rted/Harvest-Dark
 @updateURL      https://raw.githubusercontent.com/xt0rted/Harvest-Dark/master/Harvest-Dark.user.css
 @license        CC-BY-SA-4.0
@@ -31,7 +31,7 @@
   .invoices-data-box .invoices-graph, .invoices-data-box .invoices-big-data,
   .company-plan, .summaryform, .entry-delete-confirmation,
   .project-overview-table, .invoices-table, .client-document-container,
-  .client-tip, .client-warning
+  .client-tip, .client-warning, .team-member-data-box, .disable-team
   {
     background: #181818 !important;
   }
@@ -61,7 +61,7 @@
     background: #343434 !important;
   }
 
-  .hui-tab-count
+  .hui-tab-count, .hui-sidebar > a:hover
   {
     background: #444 !important;
   }
@@ -79,6 +79,11 @@
   .day-view-entry.is-running
   {
     background: #182030 !important;
+  }
+
+  .hui-sidebar > a.is-active
+  {
+    background: #4f8cc9 !important;
   }
 
   .invoices-data-box .invoices-graph .invoices-graph-legend .key-paid,
@@ -122,7 +127,10 @@
     fill: #343434 !important;
   }
 
-  .invoices-data-box .invoices-graph .chart rect.paid
+  .invoices-data-box .invoices-graph .chart rect.paid,
+  .team-members-controller .billable-fill,
+  .team-member-project-hours .project-0-fill,
+  .team-member-task-hours .task-0-fill
   {
     fill: rgba(79, 140, 201, 0.75) !important;
   }
@@ -130,6 +138,16 @@
   .invoices-data-box .invoices-graph .chart rect.open
   {
     fill: rgba(79, 140, 201, 0.4) !important;
+  }
+
+  .team-members-controller .is-over-capacity .billable-fill
+  {
+    fill: #911 !important;
+  }
+
+  .team-members-controller .is-over-capacity .non-billable-fill
+  {
+    fill: rgba(153, 17, 17, 0.4) !important;
   }
 
   .billable-percent-circle svg circle,
@@ -150,7 +168,7 @@
 
   .hui-tab,
   .spent-at-display,
-  .day-view-entry.is-running .task
+  .day-view-entry.is-running .task, .hui-sidebar > a
   {
     color: #8e8e8e !important;
   }
@@ -177,7 +195,7 @@
   .day-view-total > span, .expenses-form .receipt-input .file-input,
   .summaryform table.pricing_summary tr.total td, .entry-delete-confirmation,
   .table th, #client-document, .client-doc-summary td, .client-doc-details table td.label,
-  .invoice_container_edit #invoice_header table td.label
+  .invoice_container_edit #invoice_header table td.label, .text-default
   {
     color: #bababa !important;
   }
@@ -188,13 +206,14 @@
   }
 
   .hui-button-primary,
-  .expenses-table .category
+  .expenses-table .category, .hui-sidebar > a:hover
   {
     color: #dcdcdc !important;
   }
 
   .dropdown a:hover,
-  .dropdown button:hover
+  .dropdown button:hover,
+  .hui-sidebar > a.is-active
   {
     color: #f0f0f0 !important;
   }
@@ -214,7 +233,8 @@
     border-color: #383838 !important;
   }
 
-  .dropdown button
+  .dropdown button,
+  .hui-sidebar > a.is-active
   {
     border: none !important;
   }
@@ -235,7 +255,8 @@
   .company-plan, .hui-dialog-close, table.checkout_form tr.border td, .summaryform,
   .summaryform table.pricing_summary td, .entry-delete-confirmation, #document-history-table,
   .document-info, .chrome, .client-document-container, .client-doc-address div, .client-doc-details table td.definition,
-  .client-doc-items th, .client-doc-items td, table.line_items tbody td, table.line_items thead th
+  .client-doc-items th, .client-doc-items td, table.line_items tbody td, table.line_items thead th,
+  .team-member-data-box, .disable-team, .hui-sidebar > a.is-active
   {
     border-color: #484848 !important;
   }
@@ -245,7 +266,12 @@
     border-color: rgba(225, 225, 225, .2) !important
   }
 
-  #detailed-form
+  .hui-sidebar > a
+  {
+    border-radius: 3px !important;
+  }
+
+  #detailed-form, .hui-sidebar > a.is-active
   {
     box-shadow: none !important;
   }
