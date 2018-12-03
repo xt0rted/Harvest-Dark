@@ -32,7 +32,7 @@
   .company-plan, .summaryform, .entry-delete-confirmation,
   .project-overview-table, .invoices-table, .client-document-container,
   .client-tip, .client-warning, .team-member-data-box, .disable-team,
-  .input-suggestions
+  .input-suggestions, .contact-row, #tasks-table tr, .user-table tr
   {
     background: #181818 !important;
   }
@@ -43,9 +43,9 @@
     background: #222 !important;
   }
 
-  .user-information,
+  .user-information, .table th,
   .hui-dialog-title, .receipt-input .file-input, .expenses-form .currency-code,
-  .client-doc-items .client-doc-rows tr:nth-child(even), .chrome
+  .client-doc-items .client-doc-rows tr:nth-child(even), .chrome, .gray-background
   {
     background: #202020 !important;
   }
@@ -58,7 +58,6 @@
   }
 
   .hui-button.hui-button-selected,
-  .table th,
   .project-overview-table .project-is-toggled td
   {
     background: #343434 !important;
@@ -204,7 +203,7 @@
   .summaryform table.pricing_summary tr.total td, .entry-delete-confirmation,
   .table th, #client-document, .client-doc-summary td, .client-doc-details table td.label,
   .invoice_container_edit #invoice_header table td.label, .text-default,
-  .disable-team
+  .disable-team, table.table.table-sorted thead tr th.th-sorted-ascending span
   {
     color: #bababa !important;
   }
@@ -474,6 +473,12 @@
     background-color: rgba(0, 34, 0, 0.75) !important;
     border-color: #040 !important;
     color: #bababa;
+  }
+
+  .project-overview-table, #clients-overview-table tr, #tasks-table tr,
+  .user-table tr
+  {
+    border: 1px solid #484848;
   }
 
   i[data-icon="x"] {
