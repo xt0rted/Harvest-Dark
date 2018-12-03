@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Harvest Dark
 @namespace      github.com/xt0rted/Harvest-Dark
-@version        1.0.16
+@version        1.0.17
 @homepageURL    https://github.com/xt0rted/Harvest-Dark
 @updateURL      https://raw.githubusercontent.com/xt0rted/Harvest-Dark/master/Harvest-Dark.user.css
 @license        CC-BY-SA-4.0
@@ -203,7 +203,8 @@
   .day-view-total > span, .expenses-form .receipt-input .file-input,
   .summaryform table.pricing_summary tr.total td, .entry-delete-confirmation,
   .table th, #client-document, .client-doc-summary td, .client-doc-details table td.label,
-  .invoice_container_edit #invoice_header table td.label, .text-default
+  .invoice_container_edit #invoice_header table td.label, .text-default,
+  .disable-team
   {
     color: #bababa !important;
   }
