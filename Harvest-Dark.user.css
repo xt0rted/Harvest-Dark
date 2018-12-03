@@ -31,12 +31,14 @@
   .invoices-data-box .invoices-graph, .invoices-data-box .invoices-big-data,
   .company-plan, .summaryform, .entry-delete-confirmation,
   .project-overview-table, .invoices-table, .client-document-container,
-  .client-tip, .client-warning, .team-member-data-box, .disable-team
+  .client-tip, .client-warning, .team-member-data-box, .disable-team,
+  .input-suggestions
   {
     background: #181818 !important;
   }
 
-  .hui-tab.hui-tab-selected, .hui-dialog-close
+  .hui-tab.hui-tab-selected, .hui-dialog-close,
+  .project-search-results h4
   {
     background: #222 !important;
   }
@@ -56,7 +58,8 @@
   }
 
   .hui-button.hui-button-selected,
-  .table th
+  .table th,
+  .project-overview-table .project-is-toggled td
   {
     background: #343434 !important;
   }
@@ -261,7 +264,8 @@
   .summaryform table.pricing_summary td, .entry-delete-confirmation, #document-history-table,
   .document-info, .chrome, .client-document-container, .client-doc-address div, .client-doc-details table td.definition,
   .client-doc-items th, .client-doc-items td, table.line_items tbody td, table.line_items thead th,
-  .team-member-data-box, .disable-team, .hui-sidebar > a.is-active
+  .team-member-data-box, .disable-team, .hui-sidebar > a.is-active, .input-suggestions, .project-search-results .active-projects,
+  .project-search-results h4
   {
     border-color: #484848 !important;
   }
