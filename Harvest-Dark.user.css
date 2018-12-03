@@ -166,6 +166,11 @@
     stroke: #484848 !important;
   }
 
+  ::placeholder
+  {
+    color: #484848 !important;
+  }
+
   .hui-tab,
   .spent-at-display,
   .day-view-entry.is-running .task, .hui-sidebar > a
