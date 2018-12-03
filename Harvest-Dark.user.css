@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Harvest Dark
 @namespace      github.com/xt0rted/Harvest-Dark
-@version        1.0.18
+@version        1.0.19
 @homepageURL    https://github.com/xt0rted/Harvest-Dark
 @updateURL      https://raw.githubusercontent.com/xt0rted/Harvest-Dark/master/Harvest-Dark.user.css
 @license        CC-BY-SA-4.0
@@ -265,7 +265,7 @@
   .document-info, .chrome, .client-document-container, .client-doc-address div, .client-doc-details table td.definition,
   .client-doc-items th, .client-doc-items td, table.line_items tbody td, table.line_items thead th,
   .team-member-data-box, .disable-team, .hui-sidebar > a.is-active, .input-suggestions, .project-search-results .active-projects,
-  .project-search-results h4
+  .project-search-results h4, .capacity-meter-marks li:before
   {
     border-color: #484848 !important;
   }
@@ -288,6 +288,11 @@
   .action-bar
   {
     box-shadow: inset 0 -1px 0 #484848 !important;
+  }
+
+  .capacity-meter:after
+  {
+    box-shadow: inset 0 0 0 1px #484848 !important;
   }
 
   .invoices-data-box .invoices-graph .axes .x-axis text
