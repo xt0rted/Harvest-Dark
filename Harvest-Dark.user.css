@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Harvest Dark
 @namespace      github.com/xt0rted/Harvest-Dark
-@version        1.0.15
+@version        1.0.16
 @homepageURL    https://github.com/xt0rted/Harvest-Dark
 @updateURL      https://raw.githubusercontent.com/xt0rted/Harvest-Dark/master/Harvest-Dark.user.css
 @license        CC-BY-SA-4.0
@@ -421,7 +421,7 @@
   }
 
   input:not([type="submit"]), select, textarea,
-  .hui-input, .hui-input[disabled],
+  .hui-input:not([id=number]):not([id=expiration-month]):not([id=expiration-year]):not([id=cvv]), .hui-input[disabled],
   .chosen-container-multi .chosen-choices
   {
     background-color: #181818 !important;
