@@ -454,6 +454,18 @@
     margin-top: 20px !important;
   }
 
+  .hui-status-message-icon
+  {
+    fill: currentColor !important;
+  }
+
+  .hui-status-message-success
+  {
+    background-color: rgba(0, 34, 0, 0.75) !important;
+    border-color: #040 !important;
+    color: #bababa;
+  }
+
   i[data-icon="x"] {
     background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMCIgaGVpZ2h0PSIxMCIgdmlld0JveD0iMCAwIDEyIDEyIiBmaWxsPSIjZmZmZmZmIj4gIDxwb2x5Z29uIHBvaW50cz0iMTIsOS45IDguMSw2IDEyLDIuMSA5LjksMCA2LDMuOSAyLjEsMCAwLDIuMSAzLjksNiAwLDkuOSAyLjEsMTIgNiw4LjEgOS45LDEyIi8+PC9zdmc+) !important;
   }
