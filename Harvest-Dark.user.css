@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Harvest Dark
 @namespace      github.com/xt0rted/Harvest-Dark
-@version        1.0.17
+@version        1.0.18
 @homepageURL    https://github.com/xt0rted/Harvest-Dark
 @updateURL      https://raw.githubusercontent.com/xt0rted/Harvest-Dark/master/Harvest-Dark.user.css
 @license        CC-BY-SA-4.0
@@ -84,7 +84,7 @@
     background: #182030 !important;
   }
 
-  .hui-sidebar > a.is-active
+  .hui-sidebar > a.is-active, .input-suggestion-item.is-selected
   {
     background: #4f8cc9 !important;
   }
