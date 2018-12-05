@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Harvest Dark
 @namespace      github.com/xt0rted/Harvest-Dark
-@version        1.0.19
+@version        1.0.20
 @homepageURL    https://github.com/xt0rted/Harvest-Dark
 @updateURL      https://raw.githubusercontent.com/xt0rted/Harvest-Dark/master/Harvest-Dark.user.css
 @license        CC-BY-SA-4.0
@@ -32,7 +32,7 @@
   .company-plan, .summaryform, .entry-delete-confirmation,
   .project-overview-table, .invoices-table, .client-document-container,
   .client-tip, .client-warning, .team-member-data-box, .disable-team,
-  .input-suggestions, .contact-row, #tasks-table tr, .user-table tr
+  .input-suggestions, .contact-row, #tasks-table tr, .user-table tr, .notes_block
   {
     background: #181818 !important;
   }
@@ -208,12 +208,12 @@
     color: #bababa !important;
   }
 
-  .hui-button
+  .hui-button, .btn-action, .btn-submit
   {
     color: #c0c0c0 !important;
   }
 
-  .hui-button-primary,
+  .hui-button-primary, .btn-primary,
   .expenses-table .category, .hui-sidebar > a:hover
   {
     color: #dcdcdc !important;
@@ -265,7 +265,7 @@
   .document-info, .chrome, .client-document-container, .client-doc-address div, .client-doc-details table td.definition,
   .client-doc-items th, .client-doc-items td, table.line_items tbody td, table.line_items thead th,
   .team-member-data-box, .disable-team, .hui-sidebar > a.is-active, .input-suggestions, .project-search-results .active-projects,
-  .project-search-results h4, .capacity-meter-marks li:before
+  .project-search-results h4, .capacity-meter-marks li:before, .notes_block
   {
     border-color: #484848 !important;
   }
@@ -330,39 +330,40 @@
     border-left: none !important;
   }
 
-  .hui-button
+  .hui-button, .btn-action, .btn-submit
   {
     background: linear-gradient(#202020, #181818) !important;
     border: 1px solid #383838 !important;
     box-shadow: none !important;
   }
 
-  .hui-button:hover
+  .hui-button:hover, .btn-action:hover, .btn-submit:hover
   {
     background: linear-gradient(#303030, #282828) !important;
     border-color: #484848 !important;
   }
 
-  .hui-button[disabled]
+  .hui-button:disabled, .btn-action:disabled, .btn-submit:disabled
   {
     background: #282828 !important;
     border-color: #484848 !important;
     color: #555 !important;
   }
 
-  .hui-button-primary
+  .hui-button-primary, .btn-primary
   {
     background: linear-gradient(#407045, #305530) !important;
     border-color: #083 !important;
   }
 
-  .hui-button-primary:hover
+  .hui-button-primary:hover, .btn-primary:hover
   {
     background: linear-gradient(#508055, #407045) !important;
     border-color: #083 !important;
   }
 
-  .hui-button-primary[disabled], .hui-button-primary[disabled]:hover
+  .btn-primary:disabled, .btn-primary:disabled:hover,
+  .hui-button-primary:disabled, .hui-button-primary:disabled:hover
   {
     background: linear-gradient(#203522, #152715) !important;
     border-color: #041 !important;
