@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Harvest Dark
 @namespace      github.com/xt0rted/Harvest-Dark
-@version        1.0.20
+@version        1.0.21
 @homepageURL    https://github.com/xt0rted/Harvest-Dark
 @updateURL      https://raw.githubusercontent.com/xt0rted/Harvest-Dark/master/Harvest-Dark.user.css
 @license        CC-BY-SA-4.0
@@ -22,7 +22,7 @@
   }
 
   .main-navigation,
-  .dropdown, .dropdown button, .popover,
+  .dropdown, .dropdown button, .popover, .graph-tooltip,
   .hui-empty,
   .timesheet-app-banner-link,
   .time-tracking-reminder-setup-prompt,
@@ -89,13 +89,15 @@
   }
 
   .invoices-data-box .invoices-graph .invoices-graph-legend .key-paid,
-  .reports-summary .billable-percent .billable-percent-info ul span.billable-percent-key
+  .reports-summary .billable-percent .billable-percent-info ul span.billable-percent-key,
+  .graph-tooltip table .paid .key
   {
     background: rgba(79, 140, 201, 0.75) !important;
   }
 
   .invoices-data-box .invoices-graph .invoices-graph-legend .key-open,
-  .reports-summary .billable-percent .billable-percent-info ul span.billable-percent-key.key-unbillable
+  .reports-summary .billable-percent .billable-percent-info ul span.billable-percent-key.key-unbillable,
+  .graph-tooltip table .open .key
   {
     background: rgba(79, 140, 201, 0.4) !important;
   }
@@ -194,12 +196,10 @@
   .action-bar,
   .hui-tab.hui-tab-selected,
   .user-information,
-  .dropdown a, .dropdown button, .popover,
-  .hui-dialog-title,
-  .hui-label,
-  .day-view-entry td,
-  .day-view-total,
-  .day-view-total > span, .expenses-form .receipt-input .file-input,
+  .dropdown a, .dropdown button, .popover, .graph-tooltip,
+  .hui-dialog-title, .hui-label,
+  .day-view-entry td, .day-view-total, .day-view-total > span,
+  .expenses-form .receipt-input .file-input,
   .summaryform table.pricing_summary tr.total td, .entry-delete-confirmation,
   .table th, #client-document, .client-doc-summary td, .client-doc-details table td.label,
   .invoice_container_edit #invoice_header table td.label, .text-default,
@@ -247,7 +247,7 @@
     border: none !important;
   }
 
-  .dropdown, .popover,
+  .dropdown, .popover, .graph-tooltip,
   .user-information,
   .hui-empty,
   .hui-tabs, .hui-tab.hui-tab-selected,
@@ -265,7 +265,7 @@
   .document-info, .chrome, .client-document-container, .client-doc-address div, .client-doc-details table td.definition,
   .client-doc-items th, .client-doc-items td, table.line_items tbody td, table.line_items thead th,
   .team-member-data-box, .disable-team, .hui-sidebar > a.is-active, .input-suggestions, .project-search-results .active-projects,
-  .project-search-results h4, .capacity-meter-marks li:before, .notes_block
+  .project-search-results h4, .capacity-meter-marks li:before, .notes_block, .graph-tooltip .date
   {
     border-color: #484848 !important;
   }
@@ -313,12 +313,22 @@
     border-bottom-color: #484848 !important;
   }
 
+  .graph-tooltip:before
+  {
+    border-top-color: #484848 !important;
+  }
+
   .popover.is-down-right:after,
   .dropdown.is-down-left:after,
   .dropdown.is-down-right:after,
   .popover:after
   {
     border-bottom-color: #181818 !important;
+  }
+
+  .graph-tooltip:after
+  {
+    border-top-color: #181818 !important;
   }
 
   .day-view-week-nav #day-view-week-nav-total
