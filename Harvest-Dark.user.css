@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Harvest Dark
 @namespace      github.com/xt0rted/Harvest-Dark
-@version        1.0.21
+@version        1.0.22
 @homepageURL    https://github.com/xt0rted/Harvest-Dark
 @updateURL      https://raw.githubusercontent.com/xt0rted/Harvest-Dark/master/Harvest-Dark.user.css
 @license        CC-BY-SA-4.0
@@ -502,12 +502,12 @@
     background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMCIgaGVpZ2h0PSIxMCIgdmlld0JveD0iMCAwIDEyIDEyIiBmaWxsPSIjZmZmZmZmIj4gIDxwb2x5Z29uIHBvaW50cz0iMTIsOS45IDguMSw2IDEyLDIuMSA5LjksMCA2LDMuOSAyLjEsMCAwLDIuMSAzLjksNiAwLDkuOSAyLjEsMTIgNiw4LjEgOS45LDEyIi8+PC9zdmc+) !important;
   }
 
-  i[data-icon="arrow-left"] {
-    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMCIgaGVpZ2h0PSIxMyIgZmlsbD0iI2ZmZmZmZiI+ICA8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik05LjIgMTEuMjhMNy42NCAxMi42LjggNi42bDYuODQtNkw5LjIgMS45MiAzLjkyIDYuNmw1LjI4IDQuNjh6Ii8+PC9zdmc+) !important;
+  i[data-icon="arrow-left"], .kalendae .k-btn-previous-month {
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMCIgaGVpZ2h0PSIxMyIgZmlsbD0iI2ZmZiI+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNOS4yIDExLjI4TDcuNjQgMTIuNi44IDYuNmw2Ljg0LTZMOS4yIDEuOTIgMy45MiA2LjZsNS4yOCA0LjY4eiIvPjwvc3ZnPg==) !important;
   }
 
-  i[data-icon="arrow-right"] {
-    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMCIgaGVpZ2h0PSIxMyIgZmlsbD0iI2ZmZmZmZiI+ICA8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0uOCAxLjkyTDIuMzYuNmw2Ljg0IDYtNi44NCA2TC44IDExLjI4IDYuMDggNi42LjggMS45MnoiLz48L3N2Zz4=) !important;
+  i[data-icon="arrow-right"], .kalendae .k-btn-next-month {
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMCIgaGVpZ2h0PSIxMyIgZmlsbD0iI2ZmZiI+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNLjggMS45MkwyLjM2LjZsNi44NCA2LTYuODQgNkwuOCAxMS4yOCA2LjA4IDYuNi44IDEuOTJ6Ii8+PC9zdmc+) !important;
   }
 
   i[data-icon="calendar"] {
