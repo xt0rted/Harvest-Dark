@@ -300,17 +300,9 @@
     text-shadow: none !important;
   }
 
-  #popover-user:after
+  .graph-tooltip:after
   {
-    border-bottom-color: #202020 !important;
-  }
-
-  .popover.is-down-right:before,
-  .dropdown.is-down-left:before,
-  .dropdown.is-down-right:before,
-  .popover:before
-  {
-    border-bottom-color: #484848 !important;
+    border-top-color: #181818 !important;
   }
 
   .graph-tooltip:before
@@ -326,9 +318,17 @@
     border-bottom-color: #181818 !important;
   }
 
-  .graph-tooltip:after
+  #popover-user:after
   {
-    border-top-color: #181818 !important;
+    border-bottom-color: #202020 !important;
+  }
+
+  .popover.is-down-right:before,
+  .dropdown.is-down-left:before,
+  .dropdown.is-down-right:before,
+  .popover:before
+  {
+    border-bottom-color: #484848 !important;
   }
 
   .day-view-week-nav #day-view-week-nav-total
