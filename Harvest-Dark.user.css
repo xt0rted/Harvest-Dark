@@ -32,7 +32,8 @@
   .company-plan, .summaryform, .entry-delete-confirmation,
   .project-overview-table, .invoices-table, .client-document-container,
   .client-tip, .client-warning, .team-member-data-box, .disable-team,
-  .input-suggestions, .contact-row, #tasks-table tr, .user-table tr, .notes_block
+  .input-suggestions, .contact-row, #tasks-table tr, .user-table tr, .notes_block,
+  .fiddlybits
   {
     background: #181818 !important;
   }
@@ -305,7 +306,7 @@
     border-top-color: #181818 !important;
   }
 
-  .graph-tooltip:before
+  .graph-tooltip:before, .project-edit-type .hui-choice input:checked ~ .triangle
   {
     border-top-color: #484848 !important;
   }
@@ -326,7 +327,7 @@
   .popover.is-down-right:before,
   .dropdown.is-down-left:before,
   .dropdown.is-down-right:before,
-  .popover:before
+  .popover:before, .project-edit-type .hui-choice input:checked ~ .triangle
   {
     border-bottom-color: #484848 !important;
   }
@@ -492,7 +493,7 @@
   }
 
   .project-overview-table, #clients-overview-table tr, #tasks-table tr,
-  .user-table tr
+  .user-table tr, .fiddlybits
   {
     border: 1px solid #484848;
   }
