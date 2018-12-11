@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Harvest Dark
 @namespace      github.com/xt0rted/Harvest-Dark
-@version        1.0.23
+@version        1.0.24
 @homepageURL    https://github.com/xt0rted/Harvest-Dark
 @updateURL      https://raw.githubusercontent.com/xt0rted/Harvest-Dark/master/Harvest-Dark.user.css
 @license        CC-BY-SA-4.0
@@ -33,13 +33,13 @@
   .project-overview-table, .invoices-table, .client-document-container,
   .client-tip, .client-warning, .team-member-data-box, .disable-team,
   .input-suggestions, .contact-row, #tasks-table tr, .user-table tr, .notes_block,
-  .fiddlybits
+  .fiddlybits, .project-graph
   {
     background: #181818 !important;
   }
 
   .hui-tab.hui-tab-selected, .hui-dialog-close,
-  .project-search-results h4
+  .project-search-results h4, #pa-summary
   {
     background: #222 !important;
   }
@@ -127,20 +127,34 @@
     background-color: transparent !important;
   }
 
-  .invoices-data-box .invoices-graph .background .hover-background rect.is-selected
+  .project-graph .graphed-line-series circle
+  {
+    fill: #181818 !important;
+  }
+
+  .invoices-data-box .invoices-graph .background .hover-background rect.is-selected,
+  .project-graph .hover-area[data-is-selected], .project-graph .hover-area[data-is-selected]
   {
     fill: #343434 !important;
+  }
+
+  .project-graph .this-week text, .project-graph .this-month-text,
+  .project-graph .y-axis-label, .project-graph .y-axis text.foreground
+  {
+    fill: #bababa !important;
   }
 
   .invoices-data-box .invoices-graph .chart rect.paid,
   .team-members-controller .billable-fill,
   .team-member-project-hours .project-0-fill,
-  .team-member-task-hours .task-0-fill
+  .team-member-task-hours .task-0-fill,
+  .project-graph .this-week line
   {
     fill: rgba(79, 140, 201, 0.75) !important;
   }
 
-  .invoices-data-box .invoices-graph .chart rect.open
+  .invoices-data-box .invoices-graph .chart rect.open,
+  .project-graph .this-week rect
   {
     fill: rgba(79, 140, 201, 0.4) !important;
   }
@@ -166,9 +180,15 @@
     stroke: rgba(79, 140, 201, 0.4) !important;
   }
 
-  .invoices-data-box .invoices-graph .background .y-axis-grid line
+  .invoices-data-box .invoices-graph .background .y-axis-grid line,
+  .project-graph .y-axis line, .project-graph .graphed-line-series circle
   {
     stroke: #484848 !important;
+  }
+
+  .project-graph .y-axis text.background
+  {
+    stroke: transparent !important;
   }
 
   ::placeholder
@@ -266,7 +286,8 @@
   .document-info, .chrome, .client-document-container, .client-doc-address div, .client-doc-details table td.definition,
   .client-doc-items th, .client-doc-items td, table.line_items tbody td, table.line_items thead th,
   .team-member-data-box, .disable-team, .hui-sidebar > a.is-active, .input-suggestions, .project-search-results .active-projects,
-  .project-search-results h4, .capacity-meter-marks li:before, .notes_block, .graph-tooltip .date
+  .project-search-results h4, .capacity-meter-marks li:before, .notes_block, .graph-tooltip .date,
+  .project-data-box, #pa-summary, .pa-summary-column
   {
     border-color: #484848 !important;
   }
@@ -400,7 +421,7 @@
     color: #c8d0e1 !important;
   }
 
-  .hui-alert > svg
+  .hui-alert > svg, .project-graph .x-axis .month-group
   {
     fill: currentColor !important;
   }
