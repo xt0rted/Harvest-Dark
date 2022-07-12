@@ -20,6 +20,49 @@
     background-size: auto !important;
     background-position: left top !important;
   }
+  
+  /* Some updates for new Harvest version */
+
+    .week-view-entry .project-client {
+        color: #CCC;
+    }
+    .week-view-entry .client {
+        color: #999;
+    }
+    .week-view-entry .task {
+        color: #888;
+    }
+
+    .week-view-table .day.is-today {
+        background-color: #505050;
+    }
+
+    .week-view-table tfoot td,
+    .week-view-table thead td {
+        background-image: linear-gradient(#222, #111);
+        text-shadow: none;
+    }
+
+    .week-view-table tfoot .total {
+        color: #DDD;
+    }
+
+    .pds-button {
+        background: linear-gradient(#bbb, #999);
+    }
+
+    .pds-button.pds-button-selected,
+    .pds-button.popover-active,
+    .pds-button:active,
+    .pds-button:active:focus {
+        background: #ddd;
+    }
+
+    .has-completion-signal:after {
+        border-bottom: 3px solid #00ee00;
+    }
+
+  /* ------------------------------------ */
 
   .main-navigation,
   .dropdown, .dropdown button, .popover, .graph-tooltip,
